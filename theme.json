@@ -2,10 +2,15 @@
 	"settings": {
 		"appearanceTools": true,
 		"color": {
+			"background": true,
+			"custom": true,
 			"customDuotone": false,
+			"customGradient": true,
 			"defaultDuotone": false,
 			"defaultGradients": false,
 			"defaultPalette": false,
+			"duotone": [],
+			"gradients": [],
 			"palette": [
 				{
 					"color": "#1564c2",
@@ -22,13 +27,164 @@
 					"name": "hover-megane",
 					"slug": "custom-hover-megane"
 				}
-			]
+			],
+			"text": true
 		},
 		"layout": {
 			"contentSize": "620px",
-			"wideSize": "1000px"
+			"definitions": {
+				"constrained": {
+					"baseStyles": [
+						{
+							"rules": {
+								"float": "left",
+								"margin-inline-end": "2em",
+								"margin-inline-start": "0"
+							},
+							"selector": " > .alignleft"
+						},
+						{
+							"rules": {
+								"float": "right",
+								"margin-inline-end": "0",
+								"margin-inline-start": "2em"
+							},
+							"selector": " > .alignright"
+						},
+						{
+							"rules": {
+								"margin-left": "auto !important",
+								"margin-right": "auto !important"
+							},
+							"selector": " > .aligncenter"
+						},
+						{
+							"rules": {
+								"margin-left": "auto !important",
+								"margin-right": "auto !important",
+								"max-width": "var(--wp--style--global--content-size)"
+							},
+							"selector": " > :where(:not(.alignleft):not(.alignright):not(.alignfull))"
+						},
+						{
+							"rules": {
+								"max-width": "var(--wp--style--global--wide-size)"
+							},
+							"selector": " > .alignwide"
+						}
+					],
+					"className": "is-layout-constrained",
+					"name": "constrained",
+					"slug": "constrained",
+					"spacingStyles": [
+						{
+							"rules": {
+								"margin-block-end": "0",
+								"margin-block-start": "0"
+							},
+							"selector": " > *"
+						},
+						{
+							"rules": {
+								"margin-block-end": "0",
+								"margin-block-start": null
+							},
+							"selector": " > * + *"
+						}
+					]
+				},
+				"default": {
+					"baseStyles": [
+						{
+							"rules": {
+								"float": "left",
+								"margin-inline-end": "2em",
+								"margin-inline-start": "0"
+							},
+							"selector": " > .alignleft"
+						},
+						{
+							"rules": {
+								"float": "right",
+								"margin-inline-end": "0",
+								"margin-inline-start": "2em"
+							},
+							"selector": " > .alignright"
+						},
+						{
+							"rules": {
+								"margin-left": "auto !important",
+								"margin-right": "auto !important"
+							},
+							"selector": " > .aligncenter"
+						}
+					],
+					"className": "is-layout-flow",
+					"name": "default",
+					"slug": "flow",
+					"spacingStyles": [
+						{
+							"rules": {
+								"margin-block-end": "0",
+								"margin-block-start": "0"
+							},
+							"selector": " > *"
+						},
+						{
+							"rules": {
+								"margin-block-end": "0",
+								"margin-block-start": null
+							},
+							"selector": " > * + *"
+						}
+					]
+				},
+				"flex": {
+					"baseStyles": [
+						{
+							"rules": {
+								"align-items": "center",
+								"flex-wrap": "wrap"
+							},
+							"selector": ""
+						},
+						{
+							"rules": {
+								"margin": "0"
+							},
+							"selector": " > *"
+						}
+					],
+					"className": "is-layout-flex",
+					"displayMode": "flex",
+					"name": "flex",
+					"slug": "flex",
+					"spacingStyles": [
+						{
+							"rules": {
+								"gap": null
+							},
+							"selector": ""
+						}
+					]
+				}
+			},
+			"wideSize": "1200px"
+		},
+		"shadow": {
+			"defaultPresets": true,
+			"presets": []
 		},
 		"spacing": {
+			"customSpacingSize": true,
+			"spacingScale": {
+				"increment": 1.5,
+				"mediumStep": 1.5,
+				"operator": "*",
+				"steps": 7,
+				"unit": "rem"
+			},
+			"spacingSizes": [],
 			"units": [
 				"%",
 				"px",
@@ -39,6 +195,8 @@
 			]
 		},
 		"typography": {
+			"customFontSize": true,
+			"dropCap": true,
 			"fontFamilies": [
 				{
 					"fontFamily": "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif",
@@ -50,7 +208,13 @@
 					"fontFamily": "Noto Serif JP",
 					"slug": "noto-serif-jp"
 				}
-			]
+			],
+			"fontSizes": [],
+			"fontStyle": true,
+			"fontWeight": true,
+			"letterSpacing": true,
+			"textDecoration": true,
+			"textTransform": true
 		},
 		"useRootPaddingAwareAlignments": true
 	},
