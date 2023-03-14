@@ -11,6 +11,16 @@
 					"color": "#1564c2",
 					"name": "megane-primary",
 					"slug": "custom-megane-primary"
+				},
+				{
+					"color": "#000",
+					"name": "色 1",
+					"slug": "custom-色-1"
+				},
+				{
+					"color": "#124684",
+					"name": "hover-megane",
+					"slug": "custom-hover-megane"
 				}
 			]
 		},
@@ -60,6 +70,11 @@
 				}
 			},
 			"link": {
+				":hover": {
+					"color": {
+						"text": "var:preset|color|custom-hover-megane"
+					}
+				},
 				"color": {
 					"text": "#1564c2"
 				},
