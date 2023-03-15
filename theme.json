@@ -222,6 +222,7 @@
 		"color": {
 			"background": "var:preset|color|white"
 		},
+		"css": "h2{\ntext-decoration:underline;\n}\n",
 		"elements": {
 			"button": {
 				"typography": {
